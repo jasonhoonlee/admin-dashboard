@@ -205,7 +205,7 @@ main {
   padding: 1.5rem;
 }
 
-main .container {
+main > div.container {
   height: 100%;
   width: 100%;
 
@@ -240,20 +240,53 @@ main section .project {
 
 
 /* announcements */
-main .announcements {
-  background-color: lightpink;
-  grid-column: 4 / 5;
-  grid-row: 1 / 10;
 
-  /* width */
+main .announcements {
+  grid-column: 4 / 5;
+  margin-left: 1.5rem;
 }
+
+main .announcements-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .announcement:not(:last-of-type) {
+  border-bottom: 1px solid lightgray;
+}
+
+main .announcement {
+  padding: 1rem;
+}
+
+main .announcement h3 {
+  font-size: 1rem;
+  margin-bottom: .25rem;
+}
+
+main .announcement p {
+  font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
 
 /* trending */
 main .trending {
   background-color: lightgreen;
   grid-column: 4 / 5;
   grid-row: 11 / 21;
-
   /* width */
 }
 
