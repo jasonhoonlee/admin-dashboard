@@ -324,3 +324,19 @@ main .trending-project {
 }
 
 
+
+
+
+
+/* projects card */
+.projects-container .project {
+  box-shadow:  5px 5px 5px darkgrey;
+}
+
+.announcements-container  {
+  box-shadow:  5px 5px 5px darkgrey;
+}
+
+.trending-container {
+  box-shadow:  5px 5px 5px darkgrey;
+}
