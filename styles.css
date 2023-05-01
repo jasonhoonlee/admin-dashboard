@@ -200,9 +200,10 @@ main {
   background-color: lightblue;
   box-shadow: inset 0px 0px 10px rgba(92, 84, 84, 0.5);
   background-color: lightgrey;
+  padding: 1.5rem;
+
   grid-row: 2 / 11;
   grid-column: 2 / 6;
-  padding: 1.5rem;
 }
 
 main > div.container {
@@ -239,8 +240,19 @@ main section .project {
 
 
 
-/* announcements */
 
+
+.side-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+
+
+
+/* announcements */
 main .announcements {
   grid-column: 4 / 5;
   margin-left: 1.5rem;
@@ -284,12 +296,31 @@ main .announcement p {
 
 /* trending */
 main .trending {
-  background-color: lightgreen;
   grid-column: 4 / 5;
-  grid-row: 11 / 21;
-  /* width */
+  margin-left: 1.5rem;
 }
 
+main .trending p.username {
+  font-weight: bolder;
+}
 
+main .trending img {
+  width: 3rem;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+
+main .trending-container {
+  margin-top: 1rem;
+  border-radius: 15px;
+  background-color: white;
+}
+
+main .trending-project {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
 
 
